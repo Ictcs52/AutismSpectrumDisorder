@@ -1698,7 +1698,7 @@
             resultContainer.className = 'result-container';
             
             // Generate current date for results
-            const currentDate = new Date().toLocaleDateString('th-TH', {
+            const currentDate = new Date().toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric'
@@ -1713,27 +1713,27 @@
                     <div class="result-text">
                         <div style="margin-bottom: 1rem;">
                             <strong>Total Score: ${score}/10</strong><br>
-                            <span style="color: #666; font-size: 0.9rem;">คะแนนรวมของคุณคือ ${score} จาก 10 คะแนน</span>
+                            <span style="color: #666; font-size: 0.9rem;">Your total score is ${score} out of 10 points</span>
                         </div>
                     </div>
                     <div class="result-recommendation">
                         <div style="margin-bottom: 1.5rem;">
                             <strong>Assessment Result:</strong> Professional consultation recommended<br>
-                            <span style="color: #666; font-weight: 500;">ผลการประเมินเบื้องต้น: แนะนำให้ปรึกษาผู้เชี่ยวชาญ</span>
+                            <span style="color: #666; font-weight: 500;">Preliminary Assessment Result: Professional consultation recommended</span>
                         </div>
                         <div style="margin-bottom: 1.5rem;">
                             <strong>Recommendation:</strong> Your score indicates a level that warrants further evaluation by a healthcare professional 
                             for proper diagnosis and appropriate care.<br>
-                            <span style="color: #666; font-weight: 500;">คำแนะนำ: คะแนนของคุณอยู่ในระดับที่ควรได้รับการประเมินเพิ่มเติมจากผู้เชี่ยวชาญทางการแพทย์ 
-                            เพื่อการวินิจฉัยและการดูแลที่เหมาะสม</span>
+                            <span style="color: #666; font-weight: 500;">Recommendation: Your score is at a level that should receive additional evaluation from medical professionals 
+                            for proper diagnosis and appropriate care.</span>
                         </div>
                         <div style="background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 10px; padding: 1rem; margin-bottom: 1.5rem;">
                             <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
                                 <i class="fas fa-exclamation-triangle" style="color: #dc2626;"></i>
-                                <strong style="color: #dc2626;">ข้อจำกัดและคำเตือน / Important Disclaimer:</strong>
+                                <strong style="color: #dc2626;">Important Disclaimer:</strong>
                             </div>
                             <p style="margin: 0; font-size: 0.85rem; color: #7f1d1d; line-height: 1.5;">
-                                <strong>การประเมินนี้ไม่ใช่การวินิจฉัยทางการแพทย์</strong> และไม่สามารถใช้แทนการตรวจสอบจากแพทย์ผู้เชี่ยวชาญได้<br>
+                                <strong>This assessment is not a medical diagnosis</strong> and cannot be used as a substitute for examination by medical professionals.<br>
                                 This assessment is only a preliminary screening tool and is not a definitive medical diagnosis. 
                                 Always consult with qualified healthcare professionals for proper evaluation.
                             </p>
@@ -1741,10 +1741,10 @@
                     </div>
                     <div style="text-align: center; margin-top: 1.5rem;">
                         <button type="button" class="btn" onclick="downloadResults(${score}, 'high-risk')" style="background: #3b82f6; color: white; margin-right: 10px; margin-bottom: 10px; padding: 10px 20px; border-radius: 8px; border: none; font-weight: 500;">
-                            <i class="fas fa-download me-2"></i> ดาวน์โหลดผลลัพธ์
+                            <i class="fas fa-download me-2"></i> Download Results
                         </button>
                         <button type="button" class="btn" onclick="printResults()" style="background: #10b981; color: white; margin-right: 10px; margin-bottom: 10px; padding: 10px 20px; border-radius: 8px; border: none; font-weight: 500;">
-                            <i class="fas fa-print me-2"></i> พิมพ์ผลการประเมิน
+                            <i class="fas fa-print me-2"></i> Print Assessment
                         </button>
                         <button type="button" class="btn reset-btn" onclick="resetForm()">
                             <i class="bi bi-arrow-repeat"></i> Take Assessment Again
@@ -1760,25 +1760,25 @@
                     <div class="result-text">
                         <div style="margin-bottom: 1rem;">
                             <strong>Total Score: ${score}/10</strong><br>
-                            <span style="color: #666; font-size: 0.9rem;">คะแนนรวมของคุณคือ ${score} จาก 10 คะแนน</span>
+                            <span style="color: #666; font-size: 0.9rem;">Your total score is ${score} out of 10 points</span>
                         </div>
                     </div>
                     <div class="result-recommendation">
                         <div style="margin-bottom: 1.5rem;">
                             <strong>Assessment Result:</strong> Within normal range<br>
-                            <span style="color: #666; font-weight: 500;">ผลการประเมินเบื้องต้น: อยู่ในเกณฑ์ปกติ</span>
+                            <span style="color: #666; font-weight: 500;">Preliminary Assessment Result: Within normal range</span>
                         </div>
                         <div style="margin-bottom: 1.5rem;">
                             <strong>Recommendation:</strong> Your score is within the normal range, but continue to monitor your child's development regularly.<br>
-                            <span style="color: #666; font-weight: 500;">คำแนะนำ: คะแนนของคุณอยู่ในเกณฑ์ปกติ แต่ควรติดตามพัฒนาการของเด็กอย่างสม่ำเสมอ</span>
+                            <span style="color: #666; font-weight: 500;">Recommendation: Your score is within normal range, but you should continue to monitor your child's development regularly</span>
                         </div>
                         <div style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: 10px; padding: 1rem; margin-bottom: 1.5rem;">
                             <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
                                 <i class="fas fa-info-circle" style="color: #059669;"></i>
-                                <strong style="color: #059669;">ข้อจำกัดและคำเตือน / Important Disclaimer:</strong>
+                                <strong style="color: #059669;">Important Disclaimer:</strong>
                             </div>
                             <p style="margin: 0; font-size: 0.85rem; color: #064e3b; line-height: 1.5;">
-                                <strong>การประเมินนี้ไม่ใช่การวินิจฉัยทางการแพทย์</strong> หากมีข้อกังวลเกี่ยวกับพัฒนาการของเด็ก ควรปรึกษาผู้เชี่ยวชาญ<br>
+                                <strong>This assessment is not a medical diagnosis.</strong> If you have concerns about your child's development, consider consulting a specialist.<br>
                                 This assessment is only a screening tool. If you have concerns about your child's development, 
                                 consider consulting with a healthcare professional or specialist.
                             </p>
@@ -1786,10 +1786,10 @@
                     </div>
                     <div style="text-align: center; margin-top: 1.5rem;">
                         <button type="button" class="btn" onclick="downloadResults(${score}, 'normal')" style="background: #3b82f6; color: white; margin-right: 10px; margin-bottom: 10px; padding: 10px 20px; border-radius: 8px; border: none; font-weight: 500;">
-                            <i class="fas fa-download me-2"></i> ดาวน์โหลดผลลัพธ์
+                            <i class="fas fa-download me-2"></i> Download Results
                         </button>
                         <button type="button" class="btn" onclick="printResults()" style="background: #10b981; color: white; margin-right: 10px; margin-bottom: 10px; padding: 10px 20px; border-radius: 8px; border: none; font-weight: 500;">
-                            <i class="fas fa-print me-2"></i> พิมพ์ผลการประเมิน
+                            <i class="fas fa-print me-2"></i> Print Assessment
                         </button>
                         <button type="button" class="btn reset-btn" onclick="resetForm()">
                             <i class="bi bi-arrow-repeat"></i> Take Assessment Again
@@ -1812,7 +1812,7 @@
          * - riskLevel: 'normal' or 'high-risk' classification
          */
         function downloadResults(score, riskLevel) {
-            const currentDate = new Date().toLocaleDateString('th-TH', {
+            const currentDate = new Date().toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
@@ -1821,49 +1821,47 @@
             });
             
             const riskText = riskLevel === 'high-risk' ? 
-                'แนะนำให้ปรึกษาผู้เชี่ยวชาญ (Professional consultation recommended)' : 
-                'อยู่ในเกณฑ์ปกติ (Within normal range)';
+                'Professional consultation recommended' : 
+                'Within normal range';
             
             const recommendationText = riskLevel === 'high-risk' ? 
-                `คะแนนของคุณอยู่ในระดับที่ควรได้รับการประเมินเพิ่มเติมจากผู้เชี่ยวชาญทางการแพทย์ เพื่อการวินิจฉัยและการดูแลที่เหมาะสม
-                
-Your score indicates a level that warrants further evaluation by a healthcare professional for proper diagnosis and appropriate care.` :
-                `คะแนนของคุณอยู่ในเกณฑ์ปกติ แต่ควรติดตามพัฒนาการของเด็กอย่างสม่ำเสมอ
-                
-Your score is within the normal range, but continue to monitor your child's development regularly.`;
+                `Your score indicates a level that warrants further evaluation by a healthcare professional for proper diagnosis and appropriate care.` :
+                `Your score is within the normal range, but continue to monitor your child's development regularly.`;
 
             const resultsContent = `
-Q-CHAT-10 การประเมินภาวะออทิสติก / ASD Assessment Results
-================================================================
+Q-CHAT-10 ASD Assessment Results
+================================
 
-วันที่ทำการประเมิน / Assessment Date: ${currentDate}
+Assessment Date: ${currentDate}
 
-ผลการประเมิน / Assessment Results:
----------------------------------
-คะแนนรวม / Total Score: ${score}/10
-ผลการประเมินเบื้องต้น / Preliminary Result: ${riskText}
+ASSESSMENT RESULTS
+------------------
+Total Score: ${score}/10
+Preliminary Result: ${riskText}
 
-คำแนะนำ / Recommendations:
------------------------
+RECOMMENDATIONS
+---------------
 ${recommendationText}
 
-ข้อจำกัดและคำเตือนสำคัญ / Important Disclaimers:
-============================================
-⚠️ การประเมินนี้ไม่ใช่การวินิจฉัยทางการแพทย์ และไม่สามารถใช้แทนการตรวจสอบจากแพทย์ผู้เชี่ยวชาญได้
+IMPORTANT DISCLAIMERS
+=====================
+⚠️  This assessment is not a medical diagnosis and cannot be used as a substitute 
+    for examination by medical professionals.
 
-⚠️ This assessment is only a preliminary screening tool and is not a definitive medical diagnosis. Always consult with qualified healthcare professionals for proper evaluation.
+⚠️  This assessment is only a preliminary screening tool and is not a definitive 
+    medical diagnosis. Always consult with qualified healthcare professionals 
+    for proper evaluation.
 
-เกี่ยวกับ Q-Chat-10 / About Q-Chat-10:
-===================================
-Q-Chat-10 เป็นเครื่องมือประเมินคัดกรองเบื้องต้นสำหรับภาวะออทิสติกในเด็กอายุ 18-24 เดือน 
-ที่ได้รับการยืนยันมาตรฐานทางวิทยาศาสตร์
+ABOUT Q-CHAT-10
+===============
+Q-Chat-10 is a validated screening tool for early detection of autism spectrum 
+disorder in children aged 18-24 months. This tool has been scientifically 
+validated and is widely used by healthcare professionals for initial screening.
 
-Q-Chat-10 is a validated screening tool for early detection of autism spectrum disorder 
-in children aged 18-24 months.
-
-================================================================
-รายงานนี้สร้างขึ้นโดยระบบประเมิน Q-Chat-10 ออนไลน์
-This report was generated by the Q-Chat-10 Online Assessment System
+================================
+Generated by: Q-Chat-10 Online Assessment System
+Report Date: ${currentDate}
+================================
             `;
 
             // Create and download the file
@@ -1882,7 +1880,7 @@ This report was generated by the Q-Chat-10 Online Assessment System
          */
         function printResults() {
             const resultContainer = document.getElementById('resultContainer');
-            const currentDate = new Date().toLocaleDateString('th-TH', {
+            const currentDate = new Date().toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
@@ -1897,8 +1895,8 @@ This report was generated by the Q-Chat-10 Online Assessment System
             // Get risk level from container class
             const isHighRisk = resultContainer.classList.contains('result-risk');
             const riskText = isHighRisk ? 
-                'แนะนำให้ปรึกษาผู้เชี่ยวชาญ (Professional consultation recommended)' : 
-                'อยู่ในเกณฑ์ปกติ (Within normal range)';
+                'Professional consultation recommended' : 
+                'Within normal range';
 
             // Create printable content
             const printContent = `
@@ -1957,40 +1955,37 @@ This report was generated by the Q-Chat-10 Online Assessment System
                 </head>
                 <body>
                     <div class="header">
-                        <h1>Q-Chat-10 การประเมินภาวะออทิสติก</h1>
-                        <h2>ASD Assessment Results</h2>
-                        <p>วันที่ทำการประเมิน / Assessment Date: ${currentDate}</p>
+                        <h1>Q-Chat-10 ASD Assessment</h1>
+                        <h2>Assessment Results</h2>
+                        <p>Assessment Date: ${currentDate}</p>
                     </div>
                     
                     <div class="results-section">
-                        <h3>ผลการประเมิน / Assessment Results</h3>
+                        <h3>Assessment Results</h3>
                         <div class="score-display">
-                            คะแนนรวม / Total Score: ${score}/10
+                            Total Score: ${score}/10
                         </div>
-                        <p><strong>ผลการประเมินเบื้องต้น / Preliminary Result:</strong> ${riskText}</p>
+                        <p><strong>Preliminary Result:</strong> ${riskText}</p>
                         
-                        <h4>คำแนะนำ / Recommendations:</h4>
+                        <h4>Recommendations:</h4>
                         ${isHighRisk ? 
-                            `<p>คะแนนของคุณอยู่ในระดับที่ควรได้รับการประเมินเพิ่มเติมจากผู้เชี่ยวชาญทางการแพทย์ เพื่อการวินิจฉัยและการดูแลที่เหมาะสม</p>
-                             <p>Your score indicates a level that warrants further evaluation by a healthcare professional for proper diagnosis and appropriate care.</p>` :
-                            `<p>คะแนนของคุณอยู่ในเกณฑ์ปกติ แต่ควรติดตามพัฒนาการของเด็กอย่างสม่ำเสมอ</p>
-                             <p>Your score is within the normal range, but continue to monitor your child's development regularly.</p>`
+                            `<p>Your score indicates a level that warrants further evaluation by a healthcare professional for proper diagnosis and appropriate care.</p>` :
+                            `<p>Your score is within the normal range, but continue to monitor your child's development regularly.</p>`
                         }
                     </div>
                     
                     <div class="disclaimer">
-                        <h4>⚠️ ข้อจำกัดและคำเตือนสำคัญ / Important Disclaimers:</h4>
-                        <p><strong>การประเมินนี้ไม่ใช่การวินิจฉัยทางการแพทย์</strong> และไม่สามารถใช้แทนการตรวจสอบจากแพทย์ผู้เชี่ยวชาญได้</p>
+                        <h4>⚠️ Important Disclaimers:</h4>
+                        <p><strong>This assessment is not a medical diagnosis</strong> and cannot be used as a substitute for examination by medical professionals.</p>
                         <p><strong>This assessment is only a preliminary screening tool and is not a definitive medical diagnosis.</strong> Always consult with qualified healthcare professionals for proper evaluation.</p>
                     </div>
                     
                     <div>
-                        <h4>เกี่ยวกับ Q-Chat-10 / About Q-Chat-10:</h4>
-                        <p>Q-Chat-10 เป็นเครื่องมือประเมินคัดกรองเบื้องต้นสำหรับภาวะออทิสติกในเด็กอายุ 18-24 เดือน ที่ได้รับการยืนยันมาตรฐานทางวิทยาศาสตร์</p>
+                        <h4>About Q-Chat-10:</h4>
+                        <p>Q-Chat-10 is a validated screening tool for early detection of autism spectrum disorder in children aged 18-24 months that has been scientifically validated.</p>
                         <p>Q-Chat-10 is a validated screening tool for early detection of autism spectrum disorder in children aged 18-24 months.</p>
                         
                         <p style="text-align: center; margin-top: 20px; font-style: italic;">
-                            รายงานนี้สร้างขึ้นโดยระบบประเมิน Q-Chat-10 ออนไลน์<br>
                             This report was generated by the Q-Chat-10 Online Assessment System
                         </p>
                     </div>
